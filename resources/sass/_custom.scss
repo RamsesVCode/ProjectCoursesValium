@@ -1,0 +1,273 @@
+// Custom style...
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-sans {
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+ * Dropdown Menu Animation for Bootstrap Navbar
+ * https://startbootstrap.com/snippets/animated-navbar-dropdown
+ */
+
+// Change this breakpoint if you change the breakpoint of the navbar
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@media (max-width: 576px) {
+  .column {
+    padding:50px !important;
+    min-width: 0;
+  }
+  .column1{
+    min-width:0 !important;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.bg-indigo {
+  background-color: #6574cd !important;
+}
+
+.h-5 {
+  height: 1.25rem !important;
+}
+
+.w-5 {
+  height: 1.25rem !important;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+.bg-light {
+  background: #f3f4f6 !important;
+}
+
+.card {
+  border-radius: 0.475rem;
+  border: 0;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: #f9fafb;
+  border-top: 0;
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 0.475rem 0.475rem;
+}
+
+.dropdown-menu {
+  width: 220px;
+}
+
+.small {
+  font-size: .875rem !important;
+}
+
+.actived{
+  border-bottom: 2px solid #392C70;
+  font-weight: bold;
+  color: #392C70
+}
+
+.input-focus{
+  border-radius: 8px;
+  border:1px solid #392C70;
+  padding:7px;
+  display: flex;
+  align-items: center;
+}
+.input-focus i{
+  font-size: 19px;
+  color:#392C70;
+  margin:0 10px 0 6px;
+}
+.input-focus input[type="text"]{
+  border:none;
+  outline:none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+.bg-valium-active{
+  background-color: #392C70;
+  cursor: pointer;
+}
+.bg-valium-inactive{
+  border-color:#392C70 !important;
+  cursor: pointer;
+}
+.btn-show-course{
+  transition: .3s;
+}
+.btn-show-course:hover{
+  background-color: #392C70;
+  color:white;
+}
+.input-search{
+  padding: 8px 10px !important;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+.text-desborded{
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.item-list-courses{
+  font-family: 'Roboto';
+  background-color: white;
+  color:#e0e5e8;
+}
+.item-list-courses:hover{
+  color:white !important;
+  background-color:rgb(0,127,255);
+}
+.author-card-name{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.accordion-h{
+  background-color: #f8fafc !important;
+  outline:none;
+  border:1px solid #d9d7d7 !important;
+}
+.accordion-b{
+  border:1px solid #d9d7d7 !important; 
+  border-top:0 !important;
+}
+.animate-rotateZNeg{
+  animation-name: animation-clicked-neg;
+  animation-duration: .5s; 
+  animation-fill-mode: forwards;
+}
+.animate-rotateZPos{
+  animation-name: animation-clicked-pos;
+  animation-duration: .5s; 
+  animation-fill-mode: forwards;
+}
+@keyframes animation-clicked-neg {
+  0%{
+    transform: rotateZ(0);
+  }
+  100%{
+    transform: rotateZ(-180deg);
+  }
+}
+@keyframes animation-clicked-pos {
+  0%{
+    transform: rotateZ(-180deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
+}
+.embed-responsive{
+  position: relative;
+  padding-top: 56.25%;
+}
+.embed-responsive iframe{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.circle-course-status{
+  width:16px;
+  height:16px;
+  min-width:16px;
+  border-width:2px;
+  border-style:solid;
+  margin-top:5px
+}
+.text-button-tab{
+  color:#606060 !important;
+}
+.nav-tab-button{
+  background-color: transparent !important;
+  font-weight: bold !important;
+  color:#606060 !important;
+}
+.nav-tab-button:hover{
+  color:black !important;
+}
+.nav-tab-button-active{
+  color: black !important;
+  border-bottom: 2px solid black;
+}
+.btn-comment{
+  font-size: 16px;
+  background-color:transparent;
+}
+.btn-student:hover{
+  background-color: rgb(34, 34, 34);
+  color: white !important;
+}
+.btn-student-active{
+  background-color: rgb(34, 34, 34) !important;
+  color: white !important;
+}
+.input-search-student{
+  outline: none !important;
+  max-width: 220px;
+}
+.teacher-active{
+  border-bottom:4px solid white;
+}
